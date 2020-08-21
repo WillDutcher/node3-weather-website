@@ -13,7 +13,7 @@ const forecast = (lat, long, callback) => {
     } else if (body.error) {
       console.log('Unable to find location.', undefined)
     } else {
-      callback(undefined, body.current.weather_descriptions[0] + '; It is currently ' + f2c(body.current.temperature) + ' degrees, but feels like it is ' + f2c(body.current.feelslike) + '. Humidity is currently at ' + body.current.humidity + '.')
+      callback(undefined, body.current.weather_descriptions[0] + '; It is currently ' + f2c(body.current.temperature) + ' degrees, but feels like it is ' + f2c(body.current.feelslike) + '. Humidity is currently at ' + body.current.humidity + '%.')
     //   const loc = body.location
     //   callback(undefined, {
     //     location: loc.name + ', ' + loc.region + ', ' + loc.country,
