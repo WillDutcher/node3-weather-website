@@ -1,5 +1,3 @@
-console.log('Client side javascript file is loaded!')
-
 // How fetch API works (with a 'then' promise)
 // fetch('http://puzzle.mead.io/puzzle').then((response) => {
 //     response.json().then((data) => {
